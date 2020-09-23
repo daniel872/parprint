@@ -137,7 +137,7 @@
 .smallFormat {
   position: relative;
   min-height: 45rem;
-  background-image: url("../Images/SmallFormat_page/smallFormat.png");
+  background-image: url("../Images/smallFormat_page/smallFormat.png");
   background-size: cover;
   background-position: top;
   color: white;
@@ -230,13 +230,13 @@
   background-image: url("../Images/Home/largeFormat.png");
   background-size: cover;
   background-position: top;
-  color:black;
+  color: white;
   overflow: hidden; }
   .largeFormat ul {
     margin-top: 2rem;
     list-style: none; }
   .largeFormat li {
-    color: black;
+    color: #ececec;
     display: inline-block;
     font-family: inherit;
     font-size: 1.6rem;
@@ -393,7 +393,7 @@
   clear: both; }
 
 html {
-  font-size: 10; }
+  font-size: 62.5%; }
 
 body {
   padding: 1%;
@@ -642,4 +642,5 @@ body {
 
 @media only screen and (max-width: 800px) {
   .header_contact {
-    display: none; } }
+    display: none;
+    font-size: 50%; } }
