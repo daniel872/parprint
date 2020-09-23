@@ -18,7 +18,7 @@
   max-height: 25rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: calc((90%-2*4rem)/2);
+  width: calc((85%-2*4rem)/2);
   background-color: #65ad45;
   margin: 10px;
   float: left;
@@ -155,10 +155,9 @@
     width: 50%;
     position: absolute;
     top: 50%;
-    transform: translateY(-70%);
+    transform: translateY(-50%);
     padding: 0 2rem;
-    text-align: center;
-    max-height: 200px; }
+    text-align: center; }
     .smallFormat_box_text > h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 3rem;
@@ -229,14 +228,15 @@
   min-height: 45rem;
   background-image: url("../Images/Home/largeFormat.png");
   background-size: cover;
-  background-position: top;
-  color: white;
-  overflow: hidden; }
+  background-position: bottom;
+  color: black;
+  overflow: hidden;
+  border-bottom: 5px solid #7a232f; }
   .largeFormat ul {
     margin-top: 2rem;
     list-style: none; }
   .largeFormat li {
-    color: #ececec;
+    color: black;
     display: inline-block;
     font-family: inherit;
     font-size: 1.6rem;
@@ -245,10 +245,9 @@
     width: 50%;
     position: absolute;
     top: 50%;
-    transform: translateY(-70%);
+    transform: translateY(-50%);
     padding: 0 2rem;
-    text-align: center;
-    max-height: 200px; }
+    text-align: center; }
     .largeFormat_box_text > h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 3rem;
@@ -335,10 +334,9 @@
     width: 50%;
     position: absolute;
     top: 50%;
-    transform: translateY(-70%);
+    transform: translateY(-55%);
     padding: 0 2rem;
-    text-align: center;
-    max-height: 200px; }
+    text-align: center; }
     .commercialOffset_box_text > h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 3rem;
@@ -380,6 +378,260 @@
   text-transform: none;
   animation: moveinright 1s; }
 
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(200px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes btn {
+  0% {
+    background-color: #7a232f;
+    transform: translateY(0); }
+  100% {
+    background-color: #661d27;
+    transform: translateY(-3px); } }
+
+.creative {
+  position: relative;
+  min-height: 45rem;
+  background-image: url("../Images/Home/creative.png");
+  background-size: cover;
+  background-position: bottom;
+  color: black;
+  overflow: hidden;
+  border-bottom: 5px solid #7a232f; }
+  .creative_box_text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2rem;
+    text-align: center; }
+    .creative_box_text > h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      animation-name: moveinleft;
+      animation-duration: 1s; }
+    .creative_box_text span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: .5rem;
+      line-height: 1.5;
+      text-transform: none;
+      animation: moveinright 1s; }
+    .creative_box_text > h1, .creative_box_text span {
+      display: block; }
+    .creative_box_text > h1 span {
+      width: 100%; }
+
+.premedia {
+  position: relative;
+  min-height: 45rem;
+  background-image: url("../Images/Home/creative_premedia.png");
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  overflow: hidden;
+  border-bottom: 5px solid #7a232f; }
+  .premedia ul {
+    margin-top: 2rem;
+    list-style: none; }
+  .premedia li {
+    color: white;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 0.5rem; }
+  .premedia_box_text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2rem;
+    text-align: center;
+    right: 2rem; }
+    .premedia_box_text > h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      animation-name: moveinleft;
+      animation-duration: 1s; }
+    .premedia_box_text span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: .5rem;
+      line-height: 1.5;
+      text-transform: none;
+      animation: moveinright 1s; }
+    .premedia_box_text > h1, .premedia_box_text span {
+      display: block; }
+    .premedia_box_text > h1 span {
+      width: 100%; }
+
+.row .col-3-of-4 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  animation-name: moveinleft;
+  animation-duration: 1s;
+  margin-top: 3rem; }
+
+.row .col-3-of-4 h1, .row .col-3-of-4 span {
+  display: block; }
+
+.row .col-3-of-4 span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: .5rem;
+  line-height: 1.5;
+  text-transform: none;
+  animation: moveinright 1s; }
+
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(200px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes btn {
+  0% {
+    background-color: #7a232f;
+    transform: translateY(0); }
+  100% {
+    background-color: #661d27;
+    transform: translateY(-3px); } }
+
+.directmail {
+  position: relative;
+  min-height: 45rem;
+  background-image: url("../Images/Home/directMail.png");
+  background-size: cover;
+  background-position: bottom;
+  color: black;
+  overflow: hidden;
+  border-bottom: 5px solid #7a232f; }
+  .directmail_box_text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2rem;
+    text-align: center; }
+    .directmail_box_text > h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      animation-name: moveinleft;
+      animation-duration: 1s; }
+    .directmail_box_text span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: .5rem;
+      line-height: 1.5;
+      text-transform: none;
+      animation: moveinright 1s; }
+    .directmail_box_text > h1, .directmail_box_text span {
+      display: block; }
+    .directmail_box_text > h1 span {
+      width: 100%; }
+
+.lettershop {
+  position: relative;
+  min-height: 45rem;
+  background-image: linear-gradient(to left, #f8f8f8, rgba(231, 231, 231, 0.123)), url("../Images/Home/lettershop.png");
+  background-size: cover;
+  background-position: bottom;
+  color: black;
+  overflow: hidden;
+  border-bottom: 5px solid #7a232f; }
+  .lettershop ul {
+    margin-top: 2rem;
+    list-style: none; }
+  .lettershop li {
+    color: black;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 0.5rem; }
+  .lettershop_box_text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2rem;
+    text-align: center;
+    right: 2rem; }
+    .lettershop_box_text > h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      animation-name: moveinleft;
+      animation-duration: 1s; }
+    .lettershop_box_text span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: .5rem;
+      line-height: 1.5;
+      text-transform: none;
+      animation: moveinright 1s; }
+    .lettershop_box_text > h1, .lettershop_box_text span {
+      display: block; }
+    .lettershop_box_text > h1 span {
+      width: 100%; }
+
+.row .col-3-of-4 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  animation-name: moveinleft;
+  animation-duration: 1s;
+  margin-top: 3rem; }
+
+.row .col-3-of-4 h1, .row .col-3-of-4 span {
+  display: block; }
+
+.row .col-3-of-4 span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: .5rem;
+  line-height: 1.5;
+  text-transform: none;
+  animation: moveinright 1s; }
+
 *,
 *::after,
 *::before {
@@ -393,7 +645,7 @@
   clear: both; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 100%; }
 
 body {
   padding: 1%;
@@ -456,9 +708,12 @@ body {
       font-weight: 300; }
 
 .box_text {
+  width: 50%;
   position: absolute;
-  top: 30%;
-  left: 3rem; }
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 2rem;
+  text-align: center; }
   .box_text > h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
@@ -477,7 +732,7 @@ body {
   .box_text > h1, .box_text span {
     display: block; }
   .box_text > h1 span {
-    width: 60%; }
+    width: 100%; }
 
 .guarantee {
   position: relative;
@@ -554,10 +809,11 @@ body {
 .col-1-of-2 img {
   width: 100%; }
 
-.col-1-of-2 > p {
+.col-1-of-2 p {
   color: white;
   margin-top: -2.5rem;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  font-size: .8rem; }
 
 .getintouch {
   position: relative;
@@ -636,11 +892,41 @@ body {
     width: 100%; }
 
 /* media querries */
+@media only screen and (max-width: 1200px) {
+  .col-3-of-4, .col-1-of-4 {
+    float: none;
+    width: 98%; }
+  .col-1-of-4 {
+    margin: 4px auto; }
+  .col-1-of-2 {
+    float: none;
+    display: inline-block;
+    margin: 3px auto;
+    width: calc((100%-2*4rem)/2); }
+    .col-1-of-2 img {
+      width: 50%; } }
+
 @media only screen and (max-width: 900px) {
   .header_contact li a {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  .col-1-of-2 {
+    float: none;
+    display: inline-block;
+    margin: 3px auto;
+    width: calc((85%-2*4rem)/2); }
+    .col-1-of-2 img {
+      width: 50%; } }
 
 @media only screen and (max-width: 800px) {
   .header_contact {
-    display: none;
-    font-size: 50%; } }
+    display: none; }
+  html {
+    font-size: 50%; }
+  body {
+    padding: 0; }
+  .getstarted .box_text {
+    width: 50%; } }
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 40%; } }
