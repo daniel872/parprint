@@ -230,13 +230,13 @@
   background-image: url("../Images/Home/largeFormat.png");
   background-size: cover;
   background-position: top;
-  color: white;
+  color:black;
   overflow: hidden; }
   .largeFormat ul {
     margin-top: 2rem;
     list-style: none; }
   .largeFormat li {
-    color: #ececec;
+    color: blackc;
     display: inline-block;
     font-family: inherit;
     font-size: 1.6rem;
