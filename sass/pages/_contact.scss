@@ -1,0 +1,98 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.getintouch{
+       
+    @include card(to left,rgba(126,41,52,0.8) 0, rgba(101, 173, 69, 0.8) 75%,"../Images/Home/getintouch.png");
+    min-height:45rem;
+     
+          
+              &_link{
+                  text-decoration: none;
+                  
+                  color:$colour-text-light;
+                  font-family: 'Montserrat', sans-serif;
+                  font-weight: 500;                    
+             }
+          
+
+          
+     &_box_text{
+margin: 10rem auto;
+text-align: center;
+
+width: 75%;
+
+    
+
+     &>h1{
+     @include title;
+     font-weight: 500;
+
+     
+     }
+
+     & span{
+     @include subtitle;
+     margin-top: 2rem;
+     i{
+         margin-right: 1rem;
+     }
+
+     }
+     &>h1, span{
+     display: block;            
+     }
+
+     &>h1 span{width: 100%; 
+     }
+     
+             }
+          }
+
+
+          .quote{
+             min-height:45rem;
+             
+             &_box_text{
+
+             padding:2rem 2rem 0;
+             text-align:center;
+         }
+ 
+         &_title{
+         @include title
+ 
+         
+         }
+ 
+         &_description{
+         @include subtitle
+         }
+         &>h1, span{
+         display: block;            
+         }
+ 
+         &>h1 span{width: 100%; 
+         }  
+     }
+                   
+.row{
+
+.col-3-of-4{
+
+     h1{
+             @include title;
+             
+             
+         }
+
+         h1,span{display: block;}
+
+         span{
+             @include subtitle
+         }
+
+}
+}

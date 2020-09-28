@@ -1,0 +1,78 @@
+@import '../base/animation';
+
+
+
+@mixin center {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%);
+    transform:translateY(-50%);
+    
+}
+
+
+@mixin title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    animation-name: moveinleft;
+    animation-duration: 1s;
+}
+
+@mixin subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: .5rem;
+    line-height: 1.5;
+    text-transform:none;
+    animation: moveinright 1s;
+}
+
+@mixin card($direction,$colour1,$colour2,$image) {
+    position: relative;
+    min-height:45rem;
+    background-image: linear-gradient($direction,$colour1,$colour2,), url($image);
+    background-size: cover;
+    background-position: top;
+    color:$colour-white;
+    overflow:hidden;
+    
+}
+
+@mixin btn{
+    &_button{
+        margin-top: 1rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+        background-color:#7a232f;
+        border:$colour-white solid .1rem;
+        border-radius: 10px;
+        box-shadow: 1px 3px 6px 3px rgba(0, 0, 0, 0.322) ;
+
+        &:hover{
+            animation: btn .4s ;
+        }
+    
+        &_link{
+            text-decoration: none;
+            text-transform: uppercase;
+            color:$colour-text-light;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+
+        }     
+    
+    }
+}
+
+
+@mixin box-text{
+    width:50%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    padding:0 2rem;
+    text-align:center;}

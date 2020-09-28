@@ -1,0 +1,94 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+
+
+
+
+.quote-popup{position: fixed;
+top:0;
+left:0;
+min-width: 100%;
+z-index: 10000;
+
+.close{
+    position:absolute;
+    top:.5rem;
+    right:1rem;
+
+    &-link ,&-link:hover, &-link:visited, &-link:active{text-decoration: none;
+    color: white;}   
+}
+
+}
+
+
+.quote-popup{
+    min-height:45rem;
+        background-color: rgba(101, 173, 69, 1);
+        visibility:hidden;
+        opacity: 0;
+        display: none;
+        height: 100vh;
+        color: white;
+                
+        &:target{
+        visibility:visible;
+        opacity: 1;
+        display: block;
+        
+        }
+    
+    
+ 
+    &-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    padding:2rem 2rem 0;
+    text-align:center;
+}
+
+ 
+}
+
+
+
+
+.popup-footer{
+    min-width: 100%;
+    position: absolute;
+    bottom:2rem;
+    font-family: inherit;
+    background-color:$colour-black ;
+    padding: 1.5rem 0 1.5rem 0;
+    
+
+    &-list{
+        list-style: none;
+        text-align: center;
+    
+
+    &-item{
+        display:inline-block;
+        list-style: none;
+        color: $colour-white;
+        text-decoration: none;
+    }
+
+    &-link{
+        font-family: inherit;
+        text-decoration: none;
+        color: $colour-white;
+        font-size: 1rem;
+    }
+}
+    &-para{
+        color: $colour-white;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+}

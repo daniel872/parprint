@@ -1,0 +1,51 @@
+.form{
+    font-family: inherit;
+    width: 100%;
+    background-color:white;
+    padding:2rem 1.5rem;
+    text-align: center;
+
+&-group{
+    outline: none;
+    display: block;
+
+    
+margin-bottom: 2rem;
+
+&-btn{
+        font-family: inherit;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+        color:$colour-white;
+        background-color:#7a232f;
+        border:$colour-white solid .1rem;
+        border-radius: 10px;
+        box-shadow: 1px 3px 6px 3px rgba(0, 0, 0, 0.322);
+        text-transform: uppercase;
+
+        &:hover{
+            animation: btn .4s ;
+        }
+    }
+}
+
+
+&-control{
+    font-family: inherit;
+    font-size: 1rem;
+    padding:0.3rem 1rem;
+    min-width: 80%;
+    max-width:60rem;
+    height:2rem;
+    color: rgb(128, 128, 128);
+    outline: none;
+    &:focus{
+        border-bottom: 5px solid #7a232fad ;
+    }}
+}
+
+
+
+
+

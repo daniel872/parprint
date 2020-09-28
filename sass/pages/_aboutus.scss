@@ -1,0 +1,105 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.about{
+       
+    // @include card(to bottom,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6),"parprint_website\Images\SmallFormat_page\smallFormat.png");
+    
+    position: relative;
+    min-height:45rem;
+    
+    background-image:  linear-gradient(-105deg,rgba(101, 173, 69, 1) 0%,
+    rgba(101, 173, 69, 1) 43%,
+    rgba(0, 0, 0, 0) 43%),
+    url("../Images/Home/aboutus.png");
+
+    background-size: cover;
+    
+    // background-repeat: no-repeat;
+    color:$colour-black;
+    overflow: hidden;
+    border-bottom: 5px solid $colour-red;
+    width:100%;
+
+    &_box_text{
+        width:35%;
+        position: absolute;
+        right:2rem;
+        top:50%;
+        transform: translateY(-55%);
+        padding:0 2rem;
+        text-align:center;
+        
+        
+
+    &>h1{
+    @include title;
+    color: white;
+    
+    
+    }
+
+    & span{
+    @include subtitle;
+    
+    }
+    &>h1, span{
+    display: block;            
+    }
+
+    &>h1 span{width: 100%; 
+    }
+    
+            }
+            
+         }
+
+
+         .about-text-description{
+            
+       
+            border-bottom: 3px solid $colour-red;
+            padding-bottom: 2rem;;
+
+         &-title{
+             display: block;
+                width:75%;
+             text-align: center;
+             text-transform: uppercase;
+             margin: 2rem auto 0;
+             font-family: inherit;
+             font-size: 3rem;
+             color: $colour-red;
+         }
+         &-para{
+            width:75%;
+             line-height: 1.5;
+             margin: 1rem auto 0;
+             font-size: 1.5rem;
+         }
+        }
+             
+             
+          
+
+
+          
+.row{
+
+.col-3-of-4{
+
+     h1{
+             @include title;
+             
+             
+         }
+
+         h1,span{display: block;}
+
+         span{
+             @include subtitle
+         }
+
+}
+}

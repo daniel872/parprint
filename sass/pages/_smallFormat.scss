@@ -1,0 +1,74 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.smallFormat{
+       
+    // @include card(to bottom,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6),"parprint_website\Images\SmallFormat_page\smallFormat.png");
+    
+    position: relative;
+    min-height:45rem;
+    background-image: url("../Images/Home/smallFormat.png");
+    background-size: cover;
+    background-position: top;
+    color:$colour-white;
+    overflow: hidden;
+  
+
+       ul{
+           margin-top: 2rem;
+           list-style: none;
+           }
+
+           li{
+               color: rgb(236, 236, 236);
+               display: inline-block;
+               font-family: inherit;
+               font-size: 1.6rem;
+               padding: 0.5rem;
+           }
+      
+          
+     &_box_text{
+        @include box-text;
+         
+
+     &>h1{
+     @include title
+
+     
+     }
+
+     & span{
+     @include subtitle;
+     
+     }
+     &>h1, span{
+     display: block;            
+     }
+
+     &>h1 span{width: 100%; 
+     }
+     
+             }
+             
+          }
+
+.row{
+
+.col-3-of-4{
+
+     h1{
+             @include title;
+             
+             
+         }
+
+         h1,span{display: block;}
+
+         span{
+             @include subtitle
+         }
+
+}
+}

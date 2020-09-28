@@ -1,0 +1,83 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.commercialOffset{
+       
+    // @include card(to bottom,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6),"parprint_website\Images\SmallFormat_page\smallFormat.png");
+    
+    position: relative;
+    min-height:45rem;
+    background-image:  linear-gradient(105deg,rgba(101, 173, 69, 1) 0%,
+                         rgba(101, 173, 69, 1) 50%,
+                         rgba(0, 0, 0, 0) 50%),
+                         url("../Images/Home/commercialOffset.png");
+
+    background-size: cover;
+    background-position: top;
+    color:$colour-white;
+    overflow: hidden;
+  
+
+       ul{
+           margin-top: 2rem;
+           list-style: none;
+           }
+
+           li{
+               color: rgb(236, 236, 236);
+               display: inline-block;
+               font-family: inherit;
+               font-size: 1.6rem;
+               padding: 0.5rem;
+           }
+      
+          
+     &_box_text{
+         width:50%;
+         position: absolute;
+         top:50%;
+         transform: translateY(-55%);
+         padding:0 2rem;
+         text-align:center;
+         
+
+     &>h1{
+     @include title
+
+     
+     }
+
+     & span{
+     @include subtitle;
+     
+     }
+     &>h1, span{
+     display: block;            
+     }
+
+     &>h1 span{width: 100%; 
+     }
+     
+             }
+             
+          }
+
+.row{
+
+.col-3-of-4{
+
+     h1{
+             @include title;
+             
+             
+         }
+
+         h1,span{display: block;}
+
+         span{
+             @include subtitle
+         }
+
+}
+}

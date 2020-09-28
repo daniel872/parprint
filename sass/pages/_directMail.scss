@@ -1,0 +1,122 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.directmail{
+       
+    // @include card(to bottom,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6),"parprint_website\Images\SmallFormat_page\smallFormat.png");
+    
+    position: relative;
+    min-height:45rem;
+    background-image: url("../Images/Home/directMail.png");
+    background-size: cover;
+    background-position: bottom;
+    color:$colour-white;
+    overflow: hidden;
+    border-bottom: 5px solid $colour-red;
+    padding-top: 1rem;
+  
+
+   
+          
+     &_box_text{
+         width:60%;
+         position: absolute;
+         top:50%;
+         transform: translateY(-50%);
+         padding:0 2rem;
+         text-align:center;
+         
+
+     &>h1{
+     @include title}
+
+     & span{
+     @include subtitle;}
+     
+     
+     &>h1, span{
+     display: block;}            
+     
+
+     &>h1 span{width: 100%; 
+                            }
+     
+             }
+             
+          }
+
+
+          .lettershop{
+       
+            // @include card(to left,rgba(167, 104, 104, 0.6),rgba(255, 255, 255, 0.082),"../Images/Home/lettershop.png");
+            
+            position: relative;
+            min-height:45rem;
+            background-image: linear-gradient(to left, #f8f8f8 ,rgba(231, 231, 231, 0.123)), url("../Images/Home/lettershop.png");
+            
+            background-size: cover;
+            background-position: bottom;
+            color:black;
+            overflow: hidden;
+            border-bottom: 5px solid $colour-red;
+            
+          
+        
+               ul{
+                   margin-top: 2rem;
+                   list-style: none;
+                   }
+        
+                   li{
+                       color: $colour-black;
+                       display: inline-block;
+                       font-family: inherit;
+                       font-size: 1.6rem;
+                       padding: 0.5rem;
+                   }
+              
+                  
+             &_box_text{
+                @include box-text;
+                right:2rem;
+                padding-top: 1rem;
+        
+             &>h1{
+             @include title
+        
+             
+             }
+        
+             & span{
+             @include subtitle;
+             
+             }
+             &>h1, span{
+             display: block;            
+             }
+        
+             &>h1 span{width: 100%; 
+             }
+             
+                     }
+                     
+                  }
+.row{
+
+.col-3-of-4{
+
+     h1{
+             @include title;
+             
+             
+         }
+
+         h1,span{display: block;}
+
+         span{
+             @include subtitle
+         }
+
+}
+}
