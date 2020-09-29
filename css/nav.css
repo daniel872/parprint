@@ -1,7 +1,7 @@
 .nav-wrapper {
   background-color: #212121;
   position: absolute;
-  top: 4rem;
+  /* top: 4rem; */
   left: 0;
   right: 0;
   min-height: 4.5rem;
@@ -18,7 +18,7 @@
   -webkit-backface-visibility: hidden; 
 }
   .nav-wrapper > .nav {
-    max-width: 80rem;
+    max-width: 90rem;
     width: 100%;
     height: 4.5rem;
     margin: 0 auto;
@@ -138,7 +138,8 @@
       /* overflow: hidden; */
    }
       .nav-list > .list.-left, .nav-list > .list.-right {
-        overflow: hidden; }
+        /* overflow: hidden; */
+       }
         .nav-list > .list.-left.-left, .nav-list > .list.-right.-left {
           height: 100%;
           width: 100%;
@@ -149,7 +150,7 @@
         justify-content: space-between; }
 
       .nav-list > .list > .item {
-        margin-left: 1.5rem;
+        /* margin-left: 1.5rem; */
         margin-bottom: 0;
         border-bottom-color: transparent;
         justify-content: flex-start;
@@ -161,7 +162,7 @@
         flex-basis: unset;
         background: transparent;
         padding: 1.25rem 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
         outline: 0;
         transition: all 0.2s ease-in-out;
       text-decoration: none; }
@@ -309,8 +310,13 @@
   transform: rotate(45deg); }
 
 
-[href="#services"]{
+.services{
   position: relative;
+
+}
+
+[href='#services']:hover{
+  background-color:#7a232f;
 }
 
   .services:hover{
@@ -326,7 +332,7 @@
 flex-direction: column;
 justify-content: flex-end;
 position: absolute;
-left:0m;
+left:0rem;
 top:4rem;
 padding: 0.3rem;
 background-color: #7a232f;

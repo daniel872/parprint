@@ -765,6 +765,17 @@
   overflow: hidden;
   border-bottom: 5px solid #7e2934;
   width: 100%; }
+  .about ul {
+    margin-top: 2rem;
+    list-style: none; }
+  .about li {
+    color: #ececec;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 0.5rem; }
+  .about i {
+    font-size: 1rem; }
   .about_box_text {
     width: 35%;
     position: absolute;
@@ -942,6 +953,66 @@
   line-height: 1.5;
   text-transform: none;
   animation: moveinright 1s; }
+
+.portfolio {
+  position: relative;
+  min-height: 45rem;
+  border-bottom: 3px solid #7e2934; }
+  .portfolio_arrow {
+    clip-path: polygon(0 0, 55% 0, 38% 100%, 0% 100%);
+    min-height: 45rem;
+    background-color: #65ad45;
+    margin-bottom: 1rem; }
+    .portfolio_arrow > h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      transform: translateY(-50%);
+      color: white;
+      position: absolute;
+      top: 24rem;
+      font-size: 5rem;
+      left: 5rem; }
+    .portfolio_arrow > p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      transform: translateY(-50%);
+      color: white;
+      position: absolute;
+      top: 30rem;
+      font-size: 2rem;
+      left: 5rem; }
+  .portfolio-carousell {
+    min-height: 45rem;
+    width: 63%;
+    background-color: grey;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    max-height: 60rem; }
+  .portfolio-btn-left {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 8rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 3rem;
+    color: #7e2934; }
+  .portfolio-btn-right {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 8rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 3rem;
+    color: #7e2934; }
 
 @keyframes moveinleft {
   0% {

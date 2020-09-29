@@ -36,7 +36,9 @@
     sideNav.classList.toggle('-open');
     burger.classList.toggle('open');
     pageOverlay.style.backgroundColor='rgba(100,100,100,1)'
+    pageOverlay.style.top='0'
     services.style.backgroundColor='rgba(122,35,47,0)'
+    // services.style.top='80px'
     disablePageScroll();
   };
 
@@ -45,7 +47,9 @@
     // Close nav menu
     sideNav.classList.remove('-open');
     burger.classList.remove('open');
-    pageOverlay.style.backgroundColor='rgba(100,100,100,0)'
+    pageOverlay.style.backgroundColor='red'
+    pageOverlay.style.top='-1000px'
+    // services.style.top='0'
     // services.style.backgroundColor='rgba(122,35,47,1)'
 
     // Make sure scrolling is enabled
@@ -55,7 +59,7 @@
 
   // Event listeners
   toggleNavBtn.addEventListener('click', toggleNav);
-  pageOverlay.addEventListener('click', toggleNav);
+  // pageOverlay.addEventListener('click', toggleNav);
 
   // (on mobile) close nav menu when link is clicked
   // this is useful on mobile when clicking an anchor tag on the current page (eg. index.html#last-section)
