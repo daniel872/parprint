@@ -876,6 +876,17 @@
   color: white;
   overflow: hidden;
   min-height: 45rem; }
+  .getintouch_description_para {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: .5rem;
+    line-height: 1.2;
+    text-transform: none;
+    animation: moveinright 1s;
+    transition: all 1s;
+    padding-top: 0.5rem;
+    letter-spacing: -0.0375rem; }
   .getintouch_link {
     text-decoration: none;
     color: white;
@@ -884,7 +895,7 @@
   .getintouch_box_text {
     margin: 10rem auto;
     text-align: center;
-    width: 75%; }
+    width: 85%; }
     .getintouch_box_text > h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 3rem;
