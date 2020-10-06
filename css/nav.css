@@ -363,3 +363,7 @@ text-transform: uppercase;}
       top: 5.9rem;
       width: 100%}
 }
+
+@media all and (max-width:600px){
+   .nav-list > .list > .item > .link{font-size: 3rem;}
+}
