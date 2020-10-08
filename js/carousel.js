@@ -1,28 +1,63 @@
 const images=[
-    {src:'./Images/Portfolio/HBC_HolidayCharityGala_CounterSign_final.png',
-    description:"Hudson's Bay Foundation"},
-    {src:'./Images/Portfolio/HBC_HolidayCharityGala_Foamcore_final.png',
-    description:"Hudson's Bay Foundation"},
     {src:'./Images/Portfolio/lays_Weekender_Header.png',
-    description:"Instore Signage"},
+    company:"Frito Lays",
+    product:"Indoor Signage"},
+
     {src:'./Images/Portfolio/lays_Shelf_Hanger.png',
-    description:"Instore Signage  Shelf Hanger"},
-    {src:'./Images/Portfolio/TostitosWobbler_EN.png',
-    description:'Tostitos Wobbler'},
+    company:"Frito Lays",
+    product:"Shelf Hanger"},
+
+    {src:'./Images/Portfolio/56144_TostitosWobbler_EN.png',
+    company:'Tostitos',
+    product:" Wobbler"},
+
     {src:'./Images/Portfolio/DoritosShlfHang.png',
-    description:'Doritos Shelf Hanger'},
+    company:'Doritos',
+    product:"Shelf Hanger"},
+
     {src:'./Images/Portfolio/medicalAlert_01.png',
-    description:'Medical Alert Foundation Canada'},
+    company:'Medical Alert Foundation Canada',
+    product:"Brochure"},
+
     {src:'./Images/Portfolio/56103_BoxTopper-399-1.png',
-    description:'Box Topper'},
+    company:'PizzaHut',
+    product:"Boxtopper"},
+
     {src:'./Images/Portfolio/56103_BoxTopper-399-2.png',
-    description:'Box Topper'},
+    company:'PizzaHut',
+    product:"Boxtopper"},
+
+    {src:'./Images/Portfolio/HBC_HolidayCharityGala_CounterSign_final.png',
+    company:"Hudson's Bay Company",
+    product:"Instore POP"},
+
+    {src:'./Images/Portfolio/HBC_HolidayCharityGala_Foamcore_final.png',
+    company:"Hudson's Bay Company",
+    product:"Instore POP image to be changed"},
+
+     {src:'./Images/Portfolio/Saks.png',
+    company:'SAKS Fifth Avenue',
+    product:"Postcard Personalized Mailer"},
+
+    {src:'./Images/Portfolio/HBC_HolidayCharityGala_CounterSign_final.png',
+    company:"Hudson's Bay Company",
+    product:"new image to come"},
+
     {src:'./Images/Portfolio/BK_EN_Coupon-1.png',
-    description:'Burger King Coupon'},
-    {src:'./Images/Portfolio/Saks.png',
-    description:'SAKS Direct Mail'},
-    {src:'./Images/Portfolio/56118_DecTriplePnts-1.png',
-    description:'SAKS Direct Mail'},
+    company:'Burger King',
+    product:"Neighbourhood Coupons Mailer"},
+
+    {src:'./Images/Portfolio/FrenchCoupon_CR-HR-1.png',
+    company:'Burger King',
+    product:"Neighbourhood Coupons Mailer"},
+
+    {src:'./Images/Portfolio/56103_BoxTopper-399-1.png',
+    company:"Topper's Pizza",
+    product:"Neighbourhood Flyer Mailer image to come"},
+
+    {src:'./Images/Portfolio/56103_BoxTopper-399-1.png',
+    company:"Topper's Pizza",
+    product:"POP Dangler image to come"}
 
 
 ]
@@ -35,8 +70,10 @@ const carousellArr=(Array.from(carousell))
 const btnLeft=document.querySelector('.portfolio-btn-left')
 const btnRight=document.querySelector('.portfolio-btn-right')
 const container=document.querySelector('.portfolio-carousell-img')
-const descriptionText=document.querySelector('.portfolio_description > p');
-descriptionText.textContent=images[0].description
+const company=document.querySelector('.portfolio_company');
+const product=document.querySelector('.portfolio_product')
+company.textContent=images[0].company
+product.textContent=images[0].product
 container.style.backgroundImage=`url(${images[0].src})`
 
 let state={
@@ -50,7 +87,8 @@ let state={
 btnLeft.addEventListener('click', function(){
     if(state.counter>=0 && state.counter<images.length-1 && !state.btnRightpressed){
         state.start=(images.length-1) - state.counter
-        descriptionText.textContent=images[state.start].description
+        company.textContent=images[state.start].company
+        product.textContent=images[state.start].product
         container.style.backgroundImage=`url(${images[state.start].src})`
         state.counter++
         state.btnLeftpressed=true
@@ -61,15 +99,17 @@ btnLeft.addEventListener('click', function(){
         state.counter=0
         state.start=0
         state.btnLeftpressed=true
-        descriptionText.textContent=images[state.start].description
+        company.textContent=images[state.start].company
+        product.textContent=images[state.start].product
         container.style.backgroundImage=`url(${images[state.start].src})`
         console.log(state)
         return state
     }
-    else if(state.btnRightpressed && state.start>0){
+    else if(state.btnRightpressed){
         state.start--
         // state.btnRightpressed=false
-        descriptionText.textContent=images[state.start].description
+        company.textContent=images[state.start].company
+        product.textContent=images[state.start].product
         container.style.backgroundImage=`url(${images[state.start].src})`
         console.log(state)
     }
@@ -85,7 +125,8 @@ btnRight.addEventListener('click', function(){
     state.start++
     state.btnRightpressed=true
     state.btnLeftpressed=false
-    descriptionText.textContent=images[state.start].description
+    company.textContent=images[state.start].company
+    product.textContent=images[state.start].product
     container.style.backgroundImage=`url(${images[state.start].src})`
     console.log(state)
    } 
@@ -94,32 +135,11 @@ btnRight.addEventListener('click', function(){
     state.start=0
     state.btnRightpressed=true
     state.btnLeftpressed=false
-    descriptionText.textContent=images[state.start].description
+    company.textContent=images[state.start].company
+    product.textContent=images[state.start].product
     container.style.backgroundImage=`url(${images[state.start].src})`
     console.log(state)
    }
 
 })
 
-
-// script for icons
-
-const iconImgs=Array.from(document.querySelectorAll('.col-1-of-3 img'))
-
-const bigImg=document.querySelector('.bigger-image')
-
-iconImgs.forEach((item,id) => {
-    item.addEventListener('click', event=>{
-        console.log(event.target.src)
-        let bigSrc=event.target.src.replace('_icon','')
-        bigImg.style.backgroundImage=`url(${bigSrc})`
-    })
-  })
-
-
-function displayImg(el,id) {
-    // array.forEach(function(item,id){
-    console.log(el.target.src)
-// }
-
-}
