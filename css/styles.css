@@ -1471,4 +1471,16 @@ body {
   .commercialOffset {
     background-image: linear-gradient(105deg, #65ad45 0%, #65ad45 67%, rgba(0, 0, 0, 0) 50%), url(../Images/Small/commercialOffset_small.png); }
     .commercialOffset_box_text {
-      width: 68%; } }
+      width: 68%; }
+  .portfolio-carousell-img {
+    left: 53%;
+    width: 40%; }
+  .portfolio_company {
+    left: -40%;
+    font-size: 1.2rem; }
+  .portfolio_product {
+    font-size: 0.9rem; }
+  .portfolio_description span {
+    left: 0; }
+  .portfolio-btn-left, .portfolio-btn-right {
+    bottom: 0.5rem; } }
