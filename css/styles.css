@@ -1073,10 +1073,12 @@ iframe {
     transform: translateY(-50%);
     color: white;
     top: 12rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     left: -40%;
     width: 125%;
-    text-align: right; }
+    text-align: right;
+    letter-spacing: -0.0375rem; }
   .portfolio_product {
     position: absolute;
     top: 50%;
@@ -1085,7 +1087,8 @@ iframe {
     transform: translateY(-50%);
     color: white;
     top: 14rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: -0.0375rem;
     left: -15%;
     width: 100%;
     text-align: right; }
