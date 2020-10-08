@@ -1,63 +1,63 @@
 const images=[
     {src:'./Images/Portfolio/lays_Weekender_Header.png',
     company:"Frito Lays",
-    product:"Indoor Signage"},
+    product:"Indoor Signage_01"},
 
     {src:'./Images/Portfolio/lays_Shelf_Hanger.png',
     company:"Frito Lays",
-    product:"Shelf Hanger"},
+    product:"Shelf Hanger_02"},
 
     {src:'./Images/Portfolio/56144_TostitosWobbler_EN.png',
     company:'Tostitos',
-    product:" Wobbler"},
+    product:" Wobbler_03"},
 
     {src:'./Images/Portfolio/DoritosShlfHang.png',
     company:'Doritos',
-    product:"Shelf Hanger"},
+    product:"Shelf Hanger_04"},
 
     {src:'./Images/Portfolio/medicalAlert_01.png',
-    company:'Medical Alert Foundation Canada',
-    product:"Brochure"},
+    company:'MedicAlert Foundation Canada',
+    product:"Brochure_05"},
 
     {src:'./Images/Portfolio/56103_BoxTopper-399-1.png',
     company:'PizzaHut',
-    product:"Boxtopper"},
+    product:"Boxtopper_06"},
 
     {src:'./Images/Portfolio/56103_BoxTopper-399-2.png',
     company:'PizzaHut',
-    product:"Boxtopper"},
+    product:"Boxtopper_07"},
 
     {src:'./Images/Portfolio/HBC_HolidayCharityGala_CounterSign_final.png',
     company:"Hudson's Bay Company",
-    product:"Instore POP"},
+    product:"Instore POP_08"},
 
     {src:'./Images/Portfolio/HBC_HolidayCharityGala_Foamcore_final.png',
     company:"Hudson's Bay Company",
-    product:"Instore POP image to be changed"},
+    product:"Instore POP_09"},
 
      {src:'./Images/Portfolio/Saks.png',
     company:'SAKS Fifth Avenue',
-    product:"Postcard Personalized Mailer"},
+    product:"Postcard Personalized Mailer_10"},
 
     {src:'./Images/Portfolio/HBC_HolidayCharityGala_CounterSign_final.png',
     company:"Hudson's Bay Company",
-    product:"new image to come"},
+    product:"Instore POP_11"},
 
     {src:'./Images/Portfolio/BK_EN_Coupon-1.png',
     company:'Burger King',
-    product:"Neighbourhood Coupons Mailer"},
+    product:"Neighbourhood Coupons Mailer_12"},
 
     {src:'./Images/Portfolio/FrenchCoupon_CR-HR-1.png',
     company:'Burger King',
-    product:"Neighbourhood Coupons Mailer"},
+    product:"Neighbourhood Coupons Mailer_13"},
 
     {src:'./Images/Portfolio/56103_BoxTopper-399-1.png',
     company:"Topper's Pizza",
-    product:"Neighbourhood Flyer Mailer image to come"},
+    product:"Neighbourhood Flyer Mailer_14"},
 
     {src:'./Images/Portfolio/56103_BoxTopper-399-1.png',
     company:"Topper's Pizza",
-    product:"POP Dangler image to come"}
+    product:"POP Dangler_15"}
 
 
 ]
@@ -85,7 +85,7 @@ let state={
 
 
 btnLeft.addEventListener('click', function(){
-    if(state.counter>=0 && state.counter<images.length-1 && !state.btnRightpressed){
+    if(state.counter>0 && state.counter<images.length-1 && !state.btnRightpressed){
         state.start=(images.length-1) - state.counter
         company.textContent=images[state.start].company
         product.textContent=images[state.start].product
@@ -105,7 +105,7 @@ btnLeft.addEventListener('click', function(){
         console.log(state)
         return state
     }
-    else if(state.btnRightpressed){
+    else if(state.btnRightpressed &&state.start!==0){
         state.start--
         // state.btnRightpressed=false
         company.textContent=images[state.start].company
@@ -116,6 +116,15 @@ btnLeft.addEventListener('click', function(){
 
     else if(!state.start){
         state.btnRightpressed=false
+        state.btnLeftpressed=true
+        state.start=(images.length-1) - state.counter
+        company.textContent=images[state.start].company
+        product.textContent=images[state.start].product
+        container.style.backgroundImage=`url(${images[state.start].src})`
+        state.counter++
+        state.btnLeftpressed=true
+        console.log(state)
+        return state
     }
 })
 
@@ -130,7 +139,7 @@ btnRight.addEventListener('click', function(){
     container.style.backgroundImage=`url(${images[state.start].src})`
     console.log(state)
    } 
-   else if(state.counter===images.length-1 || state.start===images.length-1){
+   else if(state.counter===images.length-1 && state.start===images.length-1){
     state.counter=0
     state.start=0
     state.btnRightpressed=true
@@ -140,6 +149,26 @@ btnRight.addEventListener('click', function(){
     container.style.backgroundImage=`url(${images[state.start].src})`
     console.log(state)
    }
+
+   else if(state.counter===images.length-1 && state.start!==images.length-1){
+    state.counter=state.start
+    state.counter++
+    state.start++
+    company.textContent=images[state.start].company
+    product.textContent=images[state.start].product
+    container.style.backgroundImage=`url(${images[state.start].src})`
+    console.log(state)
+   }
+
+//    else if(state.start===images.length && state.counter<images.length){
+//     state.counter=0
+//     state.start=0
+//     company.textContent=images[state.start].company
+//     product.textContent=images[state.start].product
+//     container.style.backgroundImage=`url(${images[state.start].src})`
+//    }
+
+   
 
 })
 
