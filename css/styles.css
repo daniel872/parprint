@@ -926,20 +926,19 @@ iframe {
   max-height: 40rem; }
   .getintouch_description_para {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 300;
-    margin-top: .5rem;
-    line-height: 1.2;
+    line-height: 1.4;
     text-transform: none;
     animation: moveinright 1s;
     transition: all 1s;
     padding-top: 0.5rem;
     letter-spacing: -0.0375rem; }
   .getintouch_description_list {
-    margin-top: 4rem;
+    margin-top: 3rem;
     list-style: none;
-    line-height: 2.5rem;
-    font-size: 1.4rem; }
+    line-height: 2rem;
+    font-size: 1.1rem; }
   .getintouch_description_link {
     text-decoration: none;
     color: white;
@@ -948,9 +947,10 @@ iframe {
     .getintouch_description_link i {
       margin-right: 1rem; }
   .getintouch_box_text {
-    margin: 10rem auto;
+    margin: 8% auto;
     text-align: center;
-    width: 90%; }
+    margin-left: 50%;
+    width: 48%; }
     .getintouch_box_text > h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 3rem;
@@ -958,7 +958,8 @@ iframe {
       text-transform: uppercase;
       animation-name: moveinleft;
       animation-duration: 1s;
-      font-weight: 500; }
+      font-weight: 500;
+      margin-bottom: 1rem; }
 
 .quote {
   min-height: 45rem; }
@@ -1468,7 +1469,9 @@ body {
   .getintouch {
     background-image: linear-gradient(to left, rgba(30, 30, 30, 0.8) 0, rgba(30, 30, 30, 0.8) 75%), url(../Images/Small/getintouch_small.png); }
     .getintouch_box_text {
-      margin: 5rem auto; }
+      margin: 6rem auto;
+      text-align: center;
+      width: 85%; }
   .commercialOffset {
     background-image: linear-gradient(105deg, #65ad45 0%, #65ad45 67%, rgba(0, 0, 0, 0) 50%), url(../Images/Small/commercialOffset_small.png); }
     .commercialOffset .commercialOffset_box_text {
