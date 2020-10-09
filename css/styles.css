@@ -1463,8 +1463,12 @@ body {
     background-image: linear-gradient(105deg, #65ad45 0%, #65ad45 50%, rgba(0, 0, 0, 0) 50%), url(../Images/Small/home_small.png); }
   .guarantee {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/Small/guarantee_small.png); }
+    .guarantee_box_text {
+      transform: translateY(-55%); }
   .getintouch {
     background-image: linear-gradient(to left, rgba(30, 30, 30, 0.8) 0, rgba(30, 30, 30, 0.8) 75%), url(../Images/Small/getintouch_small.png); }
+    .getintouch_box_text {
+      margin: 5rem auto; }
   .commercialOffset {
     background-image: linear-gradient(105deg, #65ad45 0%, #65ad45 67%, rgba(0, 0, 0, 0) 50%), url(../Images/Small/commercialOffset_small.png); }
     .commercialOffset .commercialOffset_box_text {
