@@ -917,15 +917,16 @@ iframe {
 .getintouch {
   position: relative;
   min-height: 45rem;
-  background-image: linear-gradient(to left, rgba(10, 5, 6, 0.8) 0, rgba(10, 5, 6, 0.8) 75%), url("../Images/Home/getintouch.png");
+  background-image: linear-gradient(to left, rgba(30, 30, 30, 0.8) 0, rgba(30, 30, 30, 0.8) 75%), url("../Images/Home/getintouch.png");
   background-size: cover;
   background-position: top;
   color: white;
   overflow: hidden;
-  min-height: 45rem; }
+  min-height: 35rem;
+  max-height: 40rem; }
   .getintouch_description_para {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 300;
     margin-top: .5rem;
     line-height: 1.2;
@@ -934,15 +935,22 @@ iframe {
     transition: all 1s;
     padding-top: 0.5rem;
     letter-spacing: -0.0375rem; }
-  .getintouch_link {
+  .getintouch_description_list {
+    margin-top: 4rem;
+    list-style: none;
+    line-height: 2.5rem;
+    font-size: 1.4rem; }
+  .getintouch_description_link {
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500; }
+    .getintouch_description_link i {
+      margin-right: 1rem; }
   .getintouch_box_text {
     margin: 10rem auto;
     text-align: center;
-    width: 75%; }
+    width: 90%; }
     .getintouch_box_text > h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 3rem;
@@ -951,23 +959,6 @@ iframe {
       animation-name: moveinleft;
       animation-duration: 1s;
       font-weight: 500; }
-    .getintouch_box_text span {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      font-weight: 300;
-      margin-top: .5rem;
-      line-height: 1.5;
-      text-transform: none;
-      letter-spacing: -0.0375rem;
-      hyphens: auto;
-      animation: moveinright 1s;
-      margin-top: 2rem; }
-      .getintouch_box_text span i {
-        margin-right: 1rem; }
-    .getintouch_box_text > h1, .getintouch_box_text span {
-      display: block; }
-    .getintouch_box_text > h1 span {
-      width: 100%; }
 
 .quote {
   min-height: 45rem; }
@@ -1043,7 +1034,7 @@ iframe {
 .portfolio {
   position: relative;
   min-height: 45rem;
-  border-bottom: 3px solid #7e2934;
+  border-bottom: 5px solid #7e2934;
   background: linear-gradient(105deg, #65ad45 0%, #65ad45 44%, white 44%, white 45%, black 45%, black 100%); }
   .portfolio_description {
     position: absolute;
@@ -1469,11 +1460,11 @@ body {
   .portfolio_arrow {
     clip-path: polygon(0 0, 65% 0, 45% 100%, 0% 100%); }
   .getstarted {
-    background-image: linear-gradient(105deg, #65ad45 0%, #65ad45 50%, rgba(0, 0, 0, 0) 50%), url(../Images/Home/home_small.png); }
+    background-image: linear-gradient(105deg, #65ad45 0%, #65ad45 50%, rgba(0, 0, 0, 0) 50%), url(../Images/Small/home_small.png); }
   .guarantee {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/guarantee_small.png); }
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/Small/guarantee_small.png); }
   .getintouch {
-    background-image: linear-gradient(to left, rgba(10, 5, 6, 0.8) 0, rgba(10, 5, 6, 0.8) 75%), url(../Images/Home/getintouch_small.png); }
+    background-image: linear-gradient(to left, rgba(30, 30, 30, 0.8) 0, rgba(30, 30, 30, 0.8) 75%), url(../Images/Small/getintouch_small.png); }
   .commercialOffset {
     background-image: linear-gradient(105deg, #65ad45 0%, #65ad45 67%, rgba(0, 0, 0, 0) 50%), url(../Images/Small/commercialOffset_small.png); }
     .commercialOffset .commercialOffset_box_text {
