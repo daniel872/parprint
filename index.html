@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Service design, prepress, printing, finishing, direct mail/lettershop facility">
+    <meta name="description" content="Service design, prepress, printing, finishing, direct mail/lettershop facility. Whitby, Toronto, GTA">
     <meta name="robots" content="index, follow" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="css/styles.css">
@@ -48,15 +48,15 @@
               </li>
               <div class="item services">
                 <a class="link" href="#whatwedo" >Services <i class="fas fa-caret-right"></i></a>
-                <div class="dropdown">
-                  <li class="dropdown-item"><a class="dropdown-item-link" href="smallFormat.html">Digital small format</a></li>
-                  <li class="dropdown-item"><a class="dropdown-item-link" href="largeFormat.html">Digital large format</a></li>
-                  <li class="dropdown-item"><a class="dropdown-item-link" href="commercialOffset.html">Commercial offset</a></li>
-                  <li class="dropdown-item"><a class="dropdown-item-link" href="creative.html">Creative Support</a></li>
-                  <li class="dropdown-item"><a class="dropdown-item-link" href="premedia.html">Complete Pre-media</a></li>
-                  <li class="dropdown-item"><a class="dropdown-item-link" href="bindery.html">Bindery Finishing & Storage</a></li>
-                  <li class="dropdown-item"><a class="dropdown-item-link" href="directMail.html">Direct Mail/Lettershop</a></li>
-                  <li class="dropdown-item"><a class="dropdown-item-link" href="marketing.html">Promotional/Marketing</a></li>
+                <div class="dropdown" role='menu'>
+                  <li class="dropdown-item"><a class="dropdown-item-link" href="smallFormat.html" role='navigation'>Digital small format</a></li>
+                  <li class="dropdown-item"><a class="dropdown-item-link" href="largeFormat.html" role='navigation'>Digital large format</a></li>
+                  <li class="dropdown-item"><a class="dropdown-item-link" href="commercialOffset.html" role='navigation'>Commercial offset</a></li>
+                  <li class="dropdown-item"><a class="dropdown-item-link" href="creative.html" role='navigation'>Creative Support</a></li>
+                  <li class="dropdown-item"><a class="dropdown-item-link" href="premedia.html" role='navigation'>Complete Pre-media</a></li>
+                  <li class="dropdown-item"><a class="dropdown-item-link" href="bindery.html" role='navigation'>Bindery Finishing & Storage</a></li>
+                  <li class="dropdown-item"><a class="dropdown-item-link" href="directMail.html" role='navigation'>Direct Mail/Lettershop</a></li>
+                  <li class="dropdown-item"><a class="dropdown-item-link" href="marketing.html" role='navigation'>Promotional/Marketing</a></li>
                 </div>
               </div>
               <li class="item">
@@ -96,17 +96,17 @@
                 <h1 class="whatwedo title">What we do!</h1>
 
                <div class="row clearfix">
-                    <div class='col-1-of-3'>
+                    <div class='col-1-of-3' role="button">
                       <a href='smallFormat.html'><img src='./Images/Services/smallFormat.png' alt='Large Format'>
                         <p>Small Format</p></a>
                     </div>
-                    <div class='col-1-of-3'>
+                    <div class='col-1-of-3' role='button'>
                       <a href='largeFormat.html'>
                         <img src='./Images/Services/largeFormat.png' alt='Large Format'>
                         <p>Large Format</p>
                       </a>
                     </div>
-                    <div class='col-1-of-3'>
+                    <div class='col-1-of-3' role='button'>
                      <a href='commercialOffset.html'>
                       <img src='./Images/Services/commercialOffset.png' alt='Large Format'>
                       <p>Commercial Offset</p>
@@ -114,19 +114,19 @@
                     </div>
                </div>
                <div class='row clearfix'>
-                <div class='col-1-of-3'>
+                <div class='col-1-of-3' role='button'>
                  <a href='creative.html'>
                   <img src='./Images/Services/creativeSupport.png' alt='Large Format'>
                   <p>Creative Support</p>
                  </a>
                 </div>
-                <div class='col-1-of-3'>
+                <div class='col-1-of-3' role='button'>
                  <a href='directMail.html'>
                   <img src='./Images/Services/finishingDirectMail.png' alt='Large Format'>
                   <p>Finishing/Direct Mail</p>
                  </a>
                 </div>
-                <div class='col-1-of-3'>
+                <div class='col-1-of-3' role='button'>
                   <a href='marketing.html'>
                     <img src='./Images/Services/marketing.png' alt='Large Format'>
                     <p>Marketing</p>
@@ -161,27 +161,27 @@
         <form class="form">
           <div class="form-group">
             <!-- <label for="formGroupExampleInput">Example label</label> -->
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email" required aria-label='Email'>
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="First and Last Name">
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="First and Last Name" required aria-label='First and Last Name'>
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Company">
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Company" required aria-label='Company'>
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Phone Number">
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Phone Number" required aria-label='Phone Number'>
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Full Shipping Address">
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Full Shipping Address" required aria-label='Full Shipping Address'>
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <select id="inputState" class="form-control" placeholder="Job Type">
+            <select id="inputState" class="form-control" placeholder="Job Type" required aria-labelby='groupLabel'>
             <option selected>Job Type</option>
               <option>Business Stationary</option>
               <option>Signage/Displays/Posters</option>
@@ -192,12 +192,12 @@
             </select>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Aditional information"></textarea>
+                <!-- <label for="exampleFormControlTextarea1"></label> -->
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Additional information" aria-label="Additional Information"></textarea>
               </div>
             <button type="submit" class="form-group-btn">Submit</button>
             </form>
-            <iframe src="https://we.tl/send/en/parprintgroup" width="WIDTH" height="50" frameborder="0"></iframe>
+            <iframe src="https://we.tl/send/en/parprintgroup" width="WIDTH" height="50" frameborder="0" title='load files' aria-label="load files"></iframe>
             
       </section>
 
