@@ -140,7 +140,8 @@ iframe {
 .footer {
   font-family: inherit;
   background-color: black;
-  padding: 1.5rem 0 1.5rem 0; }
+  padding: 1.5rem 0 1.5rem 0;
+  text-align: center; }
   .footer-list {
     list-style: none;
     text-align: center; }
@@ -159,6 +160,9 @@ iframe {
     text-align: center;
     margin-top: 1rem;
     font-size: 0.8rem; }
+  .footer span {
+    display: block;
+    margin-top: 1rem; }
 
 @keyframes moveinleft {
   0% {
