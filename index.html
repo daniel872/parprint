@@ -22,7 +22,7 @@
 
        <div class="header_contact">
             <li><a href='tel:9054308300'><i class="fas fa-phone"></i> 905.430.8300</a></li>
-            <li><a href='mailto:dsora@parprintgroup.com'><i class="fas fa-envelope-square"></i> info@parprintgroup.com</a></li>
+            <li><a href='mailto:pricci@parprintgroup.com'><i class="fas fa-envelope-square"></i> info@parprintgroup.com</a></li>
             <li><a href='https://twitter.com/home?lang=en'><i class="fab fa-twitter"></i></a></li>
             <li><a href='https://ca.linkedin.com/company/david-thomas-printing'><i class="fab fa-linkedin"></i></a></li>
         </div>
@@ -62,14 +62,14 @@
               <li class="item">
                 <a class="link" href="portfolio.html">Portfolio</a>
               </li>
-              <li class="item">
+              <!-- <li class="item">
                 <a class="link" href="#popup">Get a quote</a>
-              </li>
+              </li> -->
               <li class="item">
                 <a class="link" href="contact.html">Contact</a>
               </li>
               <li class="item">
-                <a class="link" href="#quote">Send a file</a>
+                <a class="link" href="sendfile.html">Send a file</a>
               </li>
             </div>
             <div class="list -right">
@@ -152,56 +152,9 @@
 
         </div>
 
-        <section class="quote" id='quote'>
-          <div class='quote_box_text'>
-            <h1 class='quote_title'>get a quote
-                <span class='quote_description' >We could just publish a price list like everyone else, but we know you're a unique 
-                  individual with a unique project. Fill out the form below and we'll give you our best price.</span>
-            </h1>
-        <form class="form">
-          <div class="form-group">
-            <!-- <label for="formGroupExampleInput">Example label</label> -->
-            <input type="text" class="form-control" placeholder="Email" aria-required='true' aria-label='Email'>
-          </div>
-          <div class="form-group">
-            <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control"  placeholder="First and Last Name" aria-required='true' aria-label='First and Last Name'>
-          </div>
-          <div class="form-group">
-            <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control"  placeholder="Company" aria-required='true' aria-label='Company'>
-          </div>
-          <div class="form-group">
-            <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control"  placeholder="Phone Number" aria-required='true' aria-label='Phone Number'>
-          </div>
-          <div class="form-group">
-            <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control"  placeholder="Full Shipping Address" aria-required='true' aria-label='Full Shipping Address'>
-          </div>
-          <div class="form-group">
-            <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <select class="form-control" placeholder="Job Type" aria-required='true' aria-labelby='groupLabel'>
-            <option selected>Job Type</option>
-              <option>Business Stationary</option>
-              <option>Signage/Displays/Posters</option>
-              <option>Design Services</option>
-              <option>Brochures/Annual Reports</option>
-              <option>Marketing/Promotional Materials</option>
-              <option>Other</option>
-            </select>
-              </div>
-              <div class="form-group">
-                <!-- <label for="exampleFormControlTextarea1"></label> -->
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Additional information" aria-label="Additional Information"></textarea>
-              </div>
-            <button type="submit" class="form-group-btn">Submit</button>
-            </form>
-            <iframe src="https://we.tl/send/en/parprintgroup" width="WIDTH" height="50" frameborder="0" title='load files' aria-label="load files"></iframe>
-            
-      </section>
 
-      <section class="quote-popup" id='popup'>
+
+        <section class="quote-popup" id='popup'>
         
           <div class='quote-popup-box-text'>
             <h1 class='quote-popup-title'>get a quote
@@ -210,27 +163,27 @@
         <form class="form">
           <div class="form-group">
             <!-- <label for="formGroupExampleInput">Example label</label> -->
-            <input type="text" class="form-control" placeholder="Email" aria-required='true' aria-label="email">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email">
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control" placeholder="First and Last Name" aria-required='true' aria-label="first and last name">
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="First and Last Name">
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control"  placeholder="Company" aria-required='true' aria-label="company">
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Company">
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control"  placeholder="Phone Number" aria-required='true' aria-label="phone number">
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Phone Number">
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <input type="text" class="form-control"  placeholder="Full Shipping Address" aria-required='true' aria-label="full shipping address">
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Full Shipping Address">
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput2">Another label</label> -->
-            <select class="form-control" placeholder="Job Type" aria-required='true' aria-labelby='groupLabel'>
+            <select id="inputState" class="form-control" placeholder="Job Type">
             <option selected>Job Type</option>
               <option>Business Stationary</option>
               <option>Signage/Displays/Posters</option>
@@ -242,39 +195,37 @@
               </div>
               <div class="form-group">
                 <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="FormControlTextarea1" rows="10" placeholder="Additional information" aria-label="additional information"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Additional information"></textarea>
               </div>
             <button type="submit" class="form-group-btn">Submit</button>
         </form>
-        <iframe src="https://we.tl/send/en/PAR PRINT GROUP INC" width="WIDTH" height="50" frameborder="0" aria-label="load files"></iframe>
-
-
-        <div class="popup-footer" role='contentinfo'>
-          <ul class="popup-footer-list" role='menu'>
-            <li class="popup-footer-list-item" role='navigation'><a href="#header" class="footer-list-link">Home |</a></li>
-            <li class="popup-footer-list-item" role='navigation'><a href="aboutus.html" class="footer-list-link">About us |</a></li>
-            <li class="popup-footer-list-item" role='navigation'><a href="#whatwedo" class="footer-list-link">Services |</a></li>
-            <li class="popup-footer-list-item" role='navigation'><a href="portfolio.html" class="footer-list-link">Portofolio |</a></li>
-            <li class="popup-footer-list-item" role='navigation'><a href="#popup" class="footer-list-link">Get a quote |</a></li>
-            <li class="popup-footer-list-item" role='navigation'><a href="contact.html" class="footer-list-link">Contact</a></li>
-          </ul>
-          <p class='popup-footer-para '>&copy Copyright 1974 - 2020 PAR PRINT GROUP INC. and cannot be reproduced without prior written permission.</p>
-        </div>
-
-    </section>
-
         <footer class="footer">
-          <ul class="footer-list" role='menu'>
-            <li class="footer-list-item" role='navigation'><a href="#header" class="footer-list-link">Home |</a></li>
-            <li class="footer-list-item" role='navigation'><a href="aboutus.html" class="footer-list-link">About us |</a></li>
-            <li class="footer-list-item" role='navigation'><a href="#whatwedo" class="footer-list-link">Services |</a></li>
-            <li class="footer-list-item" role='navigation'><a href="portfolio.html" class="footer-list-link">Portofolio |</a></li>
-            <li class="footer-list-item" role='navigation'><a href="#quote" class="footer-list-link">Get a quote |</a></li>
-            <li class="footer-list-item" role='navigation'><a href="contact.html" class="footer-list-link">Contact</a></li>
+          <ul class="footer-list">
+            <li class="footer-list-item"><a href="#header" class="footer-list-link">Home |</a></li>
+            <li class="footer-list-item"><a href="aboutus.html" class="footer-list-link">About us |</a></li>
+            <li class="footer-list-item"><a href="#whatwedo" class="footer-list-link">Services |</a></li>
+            <li class="footer-list-item"><a href="portfolio.html" class="footer-list-link">Portfolio |</a></li>
+            <li class="footer-list-item"><a href="#quote" class="footer-list-link">Get a quote |</a></li>
+            <li class="footer-list-item"><a href="contact.html" class="footer-list-link">Contact |</a></li>
+            <li class="footer-list-item"><a href="sendfile.html" class="footer-list-link">Send a file</a></li>
           </ul>
           <p class='footer-para '>&copy Copyright 1974 - 2020 PAR PRINT GROUP INC. and cannot be reproduced without prior written permission.</p>
-          <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=l6zER3XfFbR1HpRICOBYmsUYs1gA51QoC4aNqCyalvKn6vL6ybemzTaFsCIC"></script></span>
         </footer>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer-list">
+        <li class="footer-list-item"><a href="#header" class="footer-list-link">Home |</a></li>
+        <li class="footer-list-item"><a href="aboutus.html" class="footer-list-link">About us |</a></li>
+        <li class="footer-list-item"><a href="#whatwedo" class="footer-list-link">Services |</a></li>
+        <li class="footer-list-item"><a href="portfolio.html" class="footer-list-link">Portfolio |</a></li>
+        <li class="footer-list-item"><a href="#popup" class="footer-list-link">Get a quote |</a></li>
+        <li class="footer-list-item"><a href="contact.html" class="footer-list-link">Contact |</a></li>
+        <li class="footer-list-item"><a href="sendfile.html" class="footer-list-link">Send a file</a></li>
+      </ul>
+      <p class='footer-para '>&copy Copyright 1974 - 2020 PAR PRINT GROUP INC. and cannot be reproduced without prior written permission.</p>
+      <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=l6zER3XfFbR1HpRICOBYmsUYs1gA51QoC4aNqCyalvKn6vL6ybemzTaFsCIC"></script></span>
+    </footer>
         
         <script src=".\js\simply-nav.js"></script>
 </body>
