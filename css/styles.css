@@ -1181,20 +1181,26 @@ iframe {
     background-color: #661d27; } }
 
 .send {
-  margin-top: 5rem; }
+  position: relative;
+  min-height: 45rem;
+  background-image: linear-gradient(105deg, #056af7 0%, #056af7 50%, rgba(0, 0, 0, 0) 50%), url("../Images/Home/data_transfer_small.jpg");
+  background-size: cover;
+  background-position: top;
+  color: white; }
   .send_box_text {
-    margin: 8% auto;
-    text-align: center;
-    width: 80%; }
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2rem;
+    text-align: center; }
     .send_box_text > h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 3rem;
       font-weight: 500;
       text-transform: uppercase;
       animation-name: moveinleft;
-      animation-duration: 1s;
-      font-weight: 500;
-      margin-bottom: 1rem; }
+      animation-duration: 1s; }
     .send_box_text span {
       font-family: 'Montserrat', sans-serif;
       font-size: 2rem;
@@ -1204,10 +1210,11 @@ iframe {
       text-transform: none;
       letter-spacing: -0.0375rem;
       hyphens: auto;
-      animation: moveinright 1s;
-      hyphens: none; }
+      animation: moveinright 1s; }
     .send_box_text > h1, .send_box_text span {
       display: block; }
+    .send_box_text > h1 span {
+      width: 100%; }
 
 @keyframes moveinleft {
   0% {
@@ -1531,6 +1538,11 @@ body {
     background-image: linear-gradient(105deg, #056af7 0%, #056af7 67%, rgba(0, 0, 0, 0) 50%), url(../Images/Small/commercialOffset_small.png); }
     .commercialOffset .commercialOffset_box_text {
       width: 68%; }
+  .send {
+    background-image: linear-gradient(105deg, #056af7 0%, rgba(5, 106, 247, 0.5) 100%, rgba(0, 0, 0, 0) 100%), url("../Images/Home/data_transfer_small.jpg"); }
+    .send_box_text {
+      width: 80%;
+      margin: 0 4rem; }
   .portfolio-carousell-img {
     left: 53%;
     width: 40%; }
